@@ -1,0 +1,16 @@
+<doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<!--Formulario com multiplos arquivos-->
+		<form id="envio" action="processa.php" method="post" enctype="multipart/form-data">
+			<input id="arquivo" name="arquivo[]"  type="file" multiple/>
+			<input type="submit" id="enviar" value="enviar" />
+ 			<progress id="progresso" value="0" style="width: 100%;"></progress>
+ 		</form>
+
+	</body>
+			<script src='js/Ajax.js'></script>
+			<script src='app.js'></script>
+</html>
